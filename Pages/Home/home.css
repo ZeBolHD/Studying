@@ -1,0 +1,184 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .pic {
+  min-height: 100%;
+  width: 430px;
+  border-radius: 40px;
+  background-image: url(https://554a875a-71dc-4f5f-b6bf-ae8967f137d5.selcdn.net/thumbs2/edac144e-b6ae-11ec-b766-da4e0f91397b.800x600.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero .hero-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 630px;
+  min-height: 500px;
+  background-color: var(--primary-color);
+  border-radius: 40px;
+  padding: 25px 85px;
+}
+.hero .hero-info header {
+  position: relative;
+  height: 60px;
+  width: 450px;
+  margin: 0 auto 62px;
+  display: flex;
+  align-items: center;
+  background-color: var(--second-color);
+  border-radius: 40px;
+}
+.hero .hero-info header h2 {
+  color: var(--bg-color);
+  margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+.hero .hero-info header:after {
+  position: absolute;
+  content: "";
+  top: 85px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1px;
+  width: 700px;
+  background-color: var(--bg-color);
+}
+.hero .hero-info .text {
+  position: relative;
+}
+.hero .hero-info .text .initial {
+  display: none;
+}
+.hero .hero-info .text .hide {
+  -webkit-animation: moveOut 0.5s forwards;
+          animation: moveOut 0.5s forwards;
+}
+.hero .hero-info .text .show {
+  -webkit-animation: moveIn 0.5s forwards;
+          animation: moveIn 0.5s forwards;
+}
+.hero .hero-info .text .hero-description {
+  position: absolute;
+}
+.hero .hero-info .text .hero-description h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+}
+.hero .hero-info .text .hero-description p {
+  margin: 30px 0 0 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+@-webkit-keyframes moveIn {
+  0% {
+    display: contents;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveIn {
+  0% {
+    display: contents;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes moveOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes moveOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+.hero .hero-info .menu-description {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 15px 0;
+}
+.hero .hero-info .menu-description .reg-button {
+  color: var(--bg-color);
+  background-color: var(--second-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 55px;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+.hero .hero-info .menu-description .reg-button:hover {
+  background-color: var(--primary-color-dark);
+}
+.hero .hero-info .menu-description .reg-button:active {
+  background-color: var(--second-color-dark);
+}
+.hero .hero-info .menu-description nav {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+.hero .hero-info .menu-description nav button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hero .hero-info .menu-description nav button svg {
+  position: relative;
+  width: 16px;
+  height: 28px;
+}
+.hero .hero-info .menu-description nav button:hover {
+  background-color: var(--primary-color-dark);
+}
+.hero .hero-info .menu-description nav #prev_btn svg {
+  right: 2px;
+}
+.hero .hero-info .menu-description nav #prev_btn:disabled {
+  background-color: var(--primary-color-dark);
+  cursor: default;
+}
+.hero .hero-info .menu-description nav #next_btn svg {
+  left: 2px;
+}
+.hero .hero-info .menu-description nav #next_btn:disabled {
+  background-color: var(--primary-color-dark);
+  cursor: default;
+}/*# sourceMappingURL=home.css.map */

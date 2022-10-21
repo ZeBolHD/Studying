@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <script defer src="./home.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-main">
+        <a href="./home.html" class="logo">
+          <svg
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="25" cy="25" r="25" fill="#D9D9D9" />
+            <path
+              d="M47 25C47 37.1503 37.1503 47 25 47C12.8497 47 3 37.1503 3 25C3 12.8497 12.8497 3 25 3C37.1503 3 47 12.8497 47 25Z"
+              fill="#0F0F0D"
+            />
+            <path
+              d="M9.3033 40.3952L20.3552 20.1577L29.5408 29.3432L9.3033 40.3952Z"
+              fill="#D9D9D9"
+            />
+            <path
+              d="M40.3953 9.3033L29.5409 29.3433L20.3553 20.1577L40.3953 9.3033Z"
+              fill="#D9D9D9"
+            />
+            <line
+              x1="20.3536"
+              y1="19.6464"
+              x2="30.3536"
+              y2="29.6464"
+              stroke="#0F0F0D"
+            />
+            <circle cx="25" cy="25" r="3" fill="#0F0F0D" />
+          </svg>
+
+          <h1>Trippy</h1>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="./home.html">Главная</a></li>
+            <li><a href="../Reg/reg.html">Регистрация</a></li>
+            <li><a href="">О нас</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero">
+        <div class="pic"></div>
+        <div class="hero-info">
+          <header>
+            <h2>Тропой Артемиды — на Олимп!</h2>
+            <div class="line"></div>
+          </header>
+          <div class="text">
+            <div id="desc_1" class="hero-description">
+              <h3>
+                Насладиться пейзажами Троодоса, посетить самобытную деревушку и
+                отдохнуть у прохладного водопада.
+              </h3>
+              <p>
+                Эта экскурсия — микс природных красот и колорита деревенской
+                жизни на Кипре. Вы побываете у самого высокого водопада на
+                острове. Обогнете Олимп, следуя по несложному маршруту, и
+                проникнетесь очарованием кипрского леса. Посетите старинную
+                деревню, понаблюдаете за жизнью селян, а еще познакомитесь с
+                винами, сладостями и блюдами местной кухни.
+              </p>
+            </div>
+            <div id="desc_2" class="hero-description hide initial">
+              <h3>Путь к горе богов.</h3>
+              <p>
+                Первая остановка на нашем маршруте — водопад Милломерис, самый
+                большой на Кипре. В жаркий день здесь приятно отдохнуть и
+                освежиться, можно даже искупаться — или сделать удачные
+                снимки.<br />
+                <br />
+                Тропа Артемиды проведет вас вокруг Олимпа: маршрут несложный,
+                так как почти все время идет на одной высоте, без спусков и
+                подъемов. Вы обогнете гору, по пути услышите легенды и мифы
+                этого региона и познакомитесь с особенностями здешней природы.
+                И, конечно, полюбуетесь потрясающими видами на горы Троодоса!
+              </p>
+            </div>
+            <div id="desc_3" class="hero-description hide initial">
+              <h3>Самобытная деревня</h3>
+              <p>
+                После мы посетим колоритную деревушку Какопетрия: вы раскроете
+                тайну её названия, услышите о местных достопримечательностях и
+                узнаете о традициях и быте жителей. У одного из деревенских
+                мастеров вы сможете попробовать местные продукты и сладости,
+                затем на семейной винодельне — оценить вкус кипрского вина. А
+                знакомство с блюдами национальной кухни состоится в одной из
+                горных деревенских таверн.
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-description">
+            <a class="reg-button" href="../Reg/reg.html">Регистрация</a>
+            <nav>
+              <button id="prev_btn">
+                <svg
+                  viewBox="0 0 16 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    y="14.1421"
+                    width="20"
+                    height="3"
+                    rx="1.5"
+                    transform="rotate(-45 0 14.1421)"
+                    fill="#0F0F0D"
+                  />
+                  <rect
+                    x="2.12131"
+                    y="12"
+                    width="20"
+                    height="3"
+                    rx="1.5"
+                    transform="rotate(45 2.12131 12)"
+                    fill="#0F0F0D"
+                  />
+                </svg>
+              </button>
+              <button id="next_btn">
+                <svg
+                  viewBox="0 0 16 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="20"
+                    height="3"
+                    rx="1.5"
+                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 15.799 14.1421)"
+                    fill="#0F0F0D"
+                  />
+                  <rect
+                    width="20"
+                    height="3"
+                    rx="1.5"
+                    transform="matrix(-0.707107 0.707107 0.707107 0.707107 13.6777 12)"
+                    fill="#0F0F0D"
+                  />
+                </svg>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
