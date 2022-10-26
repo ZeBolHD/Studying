@@ -12,9 +12,10 @@ prev_btn.disabled = true;
 
 const changingTabs = (e) => {
   e === "next" && current_tab++;
-  next_btn.disabled = current_tab === 3;
 
   e === "prev" && current_tab--;
+
+  next_btn.disabled = current_tab === 3;
   prev_btn.disabled = current_tab === 1;
 
   descriptions.desc1.className =

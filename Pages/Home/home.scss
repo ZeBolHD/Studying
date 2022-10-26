@@ -2,9 +2,17 @@
   display: flex;
   justify-content: space-between;
 
+  min-height: 550px;
+  width: 70%;
+  padding: 50px;
+  margin: auto;
+
+  background-color: var(--primary-bg-color);
+  border-radius: 40px;
+
   .pic {
     min-height: 100%;
-    width: 430px;
+    width: 40%;
     border-radius: 40px;
 
     background-image: url(https://554a875a-71dc-4f5f-b6bf-ae8967f137d5.selcdn.net/thumbs2/edac144e-b6ae-11ec-b766-da4e0f91397b.800x600.jpeg);
@@ -18,19 +26,18 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    width: 630px;
+    width: 50%;
+    padding: 25px;
     min-height: 500px;
 
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
     border-radius: 40px;
-
-    padding: 25px 85px;
 
     header {
       position: relative;
       height: 60px;
-      width: 450px;
-      margin: 0 auto 62px;
+      width: 80%;
+      margin: 0 auto 50px auto;
 
       display: flex;
       align-items: center;
@@ -44,7 +51,7 @@
         margin: auto;
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 24px;
       }
 
@@ -55,7 +62,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         height: 1px;
-        width: 700px;
+        width: 110%;
         background-color: var(--bg-color);
       }
     }
@@ -81,17 +88,17 @@
         h3 {
           font-style: normal;
           font-weight: 700;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 24px;
           text-align: justify;
         }
 
         p {
-          margin: 30px 0 0 0;
+          margin: 10px 0 0 0;
 
           font-style: normal;
           font-weight: 500;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 24px;
           text-align: justify;
         }
@@ -141,10 +148,10 @@
         height: 55px;
         border-radius: 40px;
 
-        transition: background-color 0.3s;
+        transition: background-color 0.5s;
 
         &:hover {
-          background-color: var(--primary-color-dark);
+          background-color: var(--primary-color);
         }
 
         &:active {
@@ -175,10 +182,10 @@
             height: 28px;
           }
 
-          transition: background-color 0.3s;
+          transition: background-color 0.5s;
 
           &:hover {
-            background-color: var(--primary-color-dark);
+            background-color: var(--primary-color);
           }
         }
 
@@ -205,5 +212,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding: 25px;
   }
 }

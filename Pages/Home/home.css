@@ -1,10 +1,16 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  min-height: 550px;
+  width: 70%;
+  padding: 50px;
+  margin: auto;
+  background-color: var(--primary-bg-color);
+  border-radius: 40px;
 }
 .hero .pic {
   min-height: 100%;
-  width: 430px;
+  width: 40%;
   border-radius: 40px;
   background-image: url(https://554a875a-71dc-4f5f-b6bf-ae8967f137d5.selcdn.net/thumbs2/edac144e-b6ae-11ec-b766-da4e0f91397b.800x600.jpeg);
   background-repeat: no-repeat;
@@ -15,17 +21,17 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 630px;
+  width: 50%;
+  padding: 25px;
   min-height: 500px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
   border-radius: 40px;
-  padding: 25px 85px;
 }
 .hero .hero-info header {
   position: relative;
   height: 60px;
-  width: 450px;
-  margin: 0 auto 62px;
+  width: 80%;
+  margin: 0 auto 50px auto;
   display: flex;
   align-items: center;
   background-color: var(--second-color);
@@ -36,7 +42,7 @@
   margin: auto;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 24px;
 }
 .hero .hero-info header:after {
@@ -46,7 +52,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: 1px;
-  width: 700px;
+  width: 110%;
   background-color: var(--bg-color);
 }
 .hero .hero-info .text {
@@ -69,15 +75,15 @@
 .hero .hero-info .text .hero-description h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   text-align: justify;
 }
 .hero .hero-info .text .hero-description p {
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   text-align: justify;
 }
@@ -136,10 +142,10 @@
   width: 245px;
   height: 55px;
   border-radius: 40px;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 .hero .hero-info .menu-description .reg-button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color);
 }
 .hero .hero-info .menu-description .reg-button:active {
   background-color: var(--second-color-dark);
@@ -158,7 +164,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 .hero .hero-info .menu-description nav button svg {
   position: relative;
@@ -166,7 +172,7 @@
   height: 28px;
 }
 .hero .hero-info .menu-description nav button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color);
 }
 .hero .hero-info .menu-description nav #prev_btn svg {
   right: 2px;
@@ -181,4 +187,10 @@
 .hero .hero-info .menu-description nav #next_btn:disabled {
   background-color: var(--primary-color-dark);
   cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding: 25px;
+  }
 }/*# sourceMappingURL=home.css.map */

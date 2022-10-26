@@ -1,0 +1,53 @@
+.hero-reg {
+  width: 500px;
+  height: 300px;
+  padding: 50px 80px;
+  margin: auto;
+
+  background-color: var(--primary-bg-color);
+  border-radius: 40px;
+  text-align: center;
+
+  .reg-form-text {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+
+    input {
+      width: 250px;
+      height: 30px;
+      padding: 0 10px;
+      border-radius: 10px;
+      border: 1px solid;
+      box-shadow: 0px 0px 25px 1px rgba(34, 60, 80, 0.1);
+
+      font-size: 20px;
+      font-weight: 500;
+
+      transition: box-shadow 0.3s;
+
+      &:focus {
+        box-shadow: 0px 0px 29px 3px rgba(34, 60, 80, 0.48);
+        outline: none;
+      }
+    }
+  }
+
+  .reg-form-sex {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    .sex-options {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
