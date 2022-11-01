@@ -26,11 +26,11 @@ body {
   color: var(--second-color);
   font-family: "Rubik", sans-serif;
   height: 100%;
+  overflow-y: hidden;
 }
 
 .wrapper {
-  margin: 0 auto 34px auto;
-  height: 100%;
+  margin: 0 auto 0 auto;
   max-width: 1450px;
 }
 .nav-button {
@@ -148,6 +148,8 @@ body {
     display: block;
     width: 100%;
     padding: 0;
+
+    margin-bottom: 30px;
 
     border-radius: 0;
 

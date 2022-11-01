@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   width: 50%;
   padding: 25px;
-  min-height: 500px;
+  height: 500px;
   background-color: var(--primary-color-dark);
   border-radius: 40px;
 }
@@ -192,5 +192,69 @@
 @media screen and (max-width: 1200px) {
   .hero {
     padding: 25px;
+    height: 300px;
+    width: 80%;
+  }
+  .hero .pic {
+    min-height: 100%;
+  }
+  .hero .hero-info {
+    height: 500px;
+  }
+  .hero .hero-info nav {
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+  .hero .pic {
+    width: 100%;
+    min-height: 35vw;
+    background-position: 50% 65%;
+    margin-bottom: 25px;
+  }
+  .hero .hero-info {
+    width: 90%;
+    padding: 5%;
+    text-align: center;
+    height: 380px;
+  }
+  .hero .hero-info header {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .hero .hero-info header::after {
+    display: none;
+    top: 75px;
+    width: 100%;
+  }
+  .hero .hero-info .menu-description {
+    margin-bottom: 0;
+  }
+  .hero .hero-info .menu-description .reg-button {
+    width: 200px;
+    height: 50px;
+  }
+  .hero .hero-info .menu-description nav {
+    width: 120px;
+  }
+  .hero .hero-info .menu-description nav button {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero .hero-info {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero .hero-info {
+    height: 420px;
   }
 }/*# sourceMappingURL=home.css.map */

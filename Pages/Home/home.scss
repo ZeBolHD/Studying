@@ -28,7 +28,7 @@
 
     width: 50%;
     padding: 25px;
-    min-height: 500px;
+    height: 500px;
 
     background-color: var(--primary-color-dark);
     border-radius: 40px;
@@ -218,5 +218,88 @@
 @media screen and (max-width: 1200px) {
   .hero {
     padding: 25px;
+    height: 300px;
+    width: 80%;
+
+    .pic {
+      min-height: 100%;
+    }
+
+    .hero-info {
+      height: 500px;
+
+      nav {
+        margin-top: auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    display: block;
+    text-align: center;
+    height: auto;
+
+    .pic {
+      width: 100%;
+      min-height: 35vw;
+
+      background-position: 50% 65%;
+
+      margin-bottom: 25px;
+    }
+
+    .hero-info {
+      width: 90%;
+      padding: 5%;
+      text-align: center;
+      height: 380px;
+
+      header {
+        width: 100%;
+        margin: 0 0 15px 0;
+
+        &::after {
+          display: none;
+          top: 75px;
+          width: 100%;
+        }
+      }
+
+      .menu-description {
+        margin-bottom: 0;
+
+        .reg-button {
+          width: 200px;
+          height: 50px;
+        }
+
+        nav {
+          width: 120px;
+          button {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    .hero-info {
+      height: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    .hero-info {
+      height: 420px;
+    }
   }
 }
