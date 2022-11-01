@@ -201,6 +201,12 @@
   .hero .hero-info {
     height: 500px;
   }
+  .hero .hero-info header {
+    margin: 0 auto 25px auto;
+  }
+  .hero .hero-info header::after {
+    top: 75px;
+  }
   .hero .hero-info nav {
     margin-top: auto;
     margin-bottom: 0px;
@@ -222,7 +228,7 @@
     width: 90%;
     padding: 5%;
     text-align: center;
-    height: 380px;
+    height: 365px;
   }
   .hero .hero-info header {
     width: 100%;
@@ -248,13 +254,13 @@
     height: 50px;
   }
 }
-@media screen and (max-width: 650px) {
-  .hero .hero-info {
-    height: 500px;
-  }
-}
 @media screen and (max-width: 800px) {
   .hero .hero-info {
     height: 420px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero .hero-info {
+    height: 500px;
   }
 }/*# sourceMappingURL=home.css.map */

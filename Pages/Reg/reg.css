@@ -1,9 +1,18 @@
+.hero-reg-bg {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
 .hero-reg {
   width: 500px;
-  height: 300px;
-  padding: 50px 80px;
+  padding: 25px 50px;
   margin: auto;
-  background-color: var(--primary-bg-color);
+  background-color: var(--primary-color-dark);
   border-radius: 40px;
   text-align: center;
 }
@@ -41,4 +50,43 @@
   width: 60%;
   display: flex;
   justify-content: space-between;
+}
+.hero-reg .reg-form-sex .sex-options input {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.hero-reg .reg-button {
+  color: var(--bg-color);
+  background-color: var(--second-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+  margin: 30px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 245px;
+  height: 55px;
+  border-radius: 40px;
+  transition: background-color 0.5s;
+}
+.hero-reg .reg-button:hover {
+  background-color: var(--primary-color);
+}
+.hero-reg .reg-button:active {
+  background-color: var(--second-color-dark);
+}
+
+@media screen and (max-width: 675px) {
+  .hero-reg-bg {
+    padding: 15px;
+  }
+  .hero-reg {
+    width: 80vw;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=reg.css.map */

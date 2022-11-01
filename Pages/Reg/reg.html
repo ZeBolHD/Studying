@@ -34,7 +34,7 @@
           />
         </svg>
 
-        <a href="./home.html" class="logo">
+        <a href="../Home/home.html" class="logo">
           <svg
             viewBox="0 0 50 50"
             fill="none"
@@ -73,42 +73,49 @@
           </ul>
         </nav>
       </header>
-      <section class="hero-reg">
-        <h2>Регистрация</h2>
-        <form action="">
-          <div class="reg-form-text">
-            <label for="name">Имя:</label>
-            <input id="name" name="name" type="text" placeholder="Имя" />
-          </div>
-          <div class="reg-form-text">
-            <label for="lastName">Фамилия:</label>
-            <input
-              id="lastName"
-              name="lastName"
-              type="text"
-              placeholder="Фамилия"
-            />
-          </div>
-          <div class="reg-form-text">
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="text" placeholder="Email" />
-          </div>
-          <div class="reg-form-sex">
-            <label>Пол:</label>
-            <div class="sex-options">
-              <div>
-                <label for="male">Мужской</label>
-                <input id="radio_male" name="male" type="radio" />
-              </div>
-              <div>
-                <label for="female">Женский</label>
-                <input id="radio_female" name="female" type="radio" />
+      <div class="hero-reg-bg">
+        <section class="hero-reg">
+          <h2>Регистрация</h2>
+          <form action="">
+            <div class="reg-form-text">
+              <label for="name">Имя:</label>
+              <input id="name" name="name" type="text" placeholder="Имя" />
+            </div>
+            <div class="reg-form-text">
+              <label for="lastName">Фамилия:</label>
+              <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                placeholder="Фамилия"
+              />
+            </div>
+            <div class="reg-form-text">
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="text" placeholder="Email" />
+            </div>
+            <div class="reg-form-sex">
+              <label>Пол:</label>
+              <div class="sex-options">
+                <div>
+                  <label for="male">Мужской</label>
+                  <input id="radio_male" name="male" type="radio" />
+                </div>
+                <div>
+                  <label for="female">Женский</label>
+                  <input id="radio_female" name="female" type="radio" />
+                </div>
               </div>
             </div>
-          </div>
-          <input id="send_button" type="button" value="Зарегистрироваться" />
-        </form>
-      </section>
+            <input
+              class="reg-button"
+              id="send_button"
+              type="button"
+              value="Зарегистрироваться"
+            />
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>

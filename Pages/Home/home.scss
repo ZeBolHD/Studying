@@ -227,6 +227,13 @@
 
     .hero-info {
       height: 500px;
+      header {
+        margin: 0 auto 25px auto;
+
+        &::after {
+          top: 75px;
+        }
+      }
 
       nav {
         margin-top: auto;
@@ -255,7 +262,7 @@
       width: 90%;
       padding: 5%;
       text-align: center;
-      height: 380px;
+      height: 365px;
 
       header {
         width: 100%;
@@ -288,18 +295,18 @@
   }
 }
 
-@media screen and (max-width: 650px) {
-  .hero {
-    .hero-info {
-      height: 500px;
-    }
-  }
-}
-
 @media screen and (max-width: 800px) {
   .hero {
     .hero-info {
       height: 420px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    .hero-info {
+      height: 500px;
     }
   }
 }
