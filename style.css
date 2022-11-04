@@ -27,7 +27,6 @@ body {
   background-color: var(--bg-color);
   color: var(--second-color);
   font-family: "Rubik", sans-serif;
-  height: 100%;
 }
 
 .wrapper {
