@@ -1,0 +1,10 @@
+.hero {
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 50px;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+}/*# sourceMappingURL=test.css.map */
